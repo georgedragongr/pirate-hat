@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pirate Hat</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Pirate Hat, a place for people who hate working in silence.">
+        <meta name="keywords" content="HTML,CSS,Bootstrap 4,JavaScript,Soundboard,Pirate Hat">
+        <meta name="author" content="Georgios Drakopoulos">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/favicon.png" type="image/gif" sizes="16x16">
+                <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+        <!--Custom CSS-->
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    <body>
+<div class="alert alert-info alert-dismissible">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <strong>Do you enjoy Pirate Hat?</strong> Give it a star on <a href="https://github.com/georgedragongr/League-of-Media" target="_blank">GitHub</a>.
+</div>
+<!--LOGO-->
+<div class="container-fluid">
+    <img id="logo" src="img/piratehatlogo.png" alt="logo" style="width:300px;">
+</div>
+<!--END OF LOGO-->
+<!--INTRO-->
+<div class="container">
+<h1 class="text-white text-center">Welcome to Pirate Hat.</h1>
+<p class="text-white text-center font-weight-bold">A place for people who hate working in silence.</p>
+</div>
+<!--END OF INTRO-->
+<br>
+<br>
+<br>
+<!--CALL FOR ACTION-->
+<div class="container">
+<center>
+<a class="text-warning font-weight-bold tooltipsgg" href="#" data-toggle="tooltip" data-placement="right" title="Select a category to play a sound and pause it by clicking the button again.">Hover for details!</a>
+</center>
+</div>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+});    
+</script>
+<!--END OF CALL-->
+<br>
+<br>
+<!--CATEGORIES-->
+<div class="container-fluid">
+<div class="row justify-content-center">
+    
+<!--RAIN DIV-->
+<div id="raindiv" class="col-md-4 categdiv" onclick="sound('one')">    
+<h4 class="text-center">RAIN</h4>
+</div>
+<!--END OF RAIN DIV-->
+<div class="col-sm-1">
+<p class="text-center">  </p>
+</div>   
+<!--FIRE-->
+<div id="firediv" class="col-md-4 categdiv" onclick="sound('two')">    
+<h4 class="text-center">FIRE</h4>
+</div>
+<!--END OF FIRE-->
+    
+</div>   
+<br>
+<br>
+<div class="row justify-content-center">    
+<!--NATURE DIV-->
+<div id="naturediv" class="col-md-4 categdiv" onclick="sound('three')">    
+<h4 class="text-center">NATURE</h4>
+</div>
+<!--END OF NATURE DIV-->
+<div class="col-sm-1">
+<p class="text-center">  </p>
+</div>    
+<!--CITY-->
+<div id="citydiv" class="col-md-4 categdiv" onclick="sound('four')">    
+<h4 class="text-center">CITY</h4>
+</div>
+<!--END OF CITY-->
+</div>
+
+<br>
+<br>
+<div class="row justify-content-center">
+    
+<!--OFFICE-->
+<div id="officediv" class="col-md-4 categdiv" onclick="sound('five')">    
+<h4 class="text-center">OFFICE</h4>
+</div>
+<!--END OF OFFICE-->
+<div class="col-sm-1">
+<p class="text-center">  </p>
+</div>    
+<!--COFFEE SHOP-->
+<div id="coffeediv" class="col-md-4 categdiv" onclick="sound('six')">    
+<h4 class="text-center">COFFEE SHOP</h4>
+</div>
+<!--END OF COFFEE SHOP-->
+</div>
+<br>
+<br>
+<div class="row justify-content-center">
+    
+<!--JAZZ-->
+<div id="jazzdiv" class="col-md-4 categdiv" onclick="sound('seven')">    
+<h4 class="text-center">JAZZ</h4>
+</div>
+<!--END OF JAZZ-->
+<div class="col-sm-1">
+<p class="text-center">  </p>
+</div>    
+<!--ACOUSTIC-->
+<div id="acoustdiv" class="col-md-4 categdiv" onclick="sound('eight')">    
+<h4 class="text-center">ACOUSTIC MUSIC</h4>
+</div>
+<!--END OF ACOUSTIC-->
+</div>
+<br>
+<br>
+<div class="row justify-content-center">
+    
+<!--CLASSICAL-->
+<div id="classdiv" class="col-md-4 categdiv" onclick="sound('nine')">    
+<h4 class="text-center">CLASSICAL MUSIC</h4>
+</div>
+<!--END OF CLASSICAL-->
+<div class="col-sm-1">
+<p class="text-center">  </p>
+</div>  
+<!--CHILLSTEP-->
+<div id="chilldiv" class="col-md-4 categdiv" onclick="sound('ten')">    
+<h4 class="text-center">CHILLSTEP</h4>
+</div>
+<!--END OF CHILLSTEP-->
+</div>
+<br>
+<br>
+<div class="row justify-content-center">
+    
+<!--Lo-Fi Hip Hop-->
+<div id="lofidiv" class="col-md-4 categdiv" onclick="sound('eleven')">    
+<h4 class="text-center">Lo-Fi HIP HOP</h4>
+</div>
+<!--END OF Lo-Fi Hip Hop-->
+<div class="col-sm-1">
+<p class="text-center">  </p>
+</div>   
+<!--DUNGEON SYNTH-->
+<div id="dangdiv" class="col-md-4 categdiv" onclick="sound('twelve')">    
+<h4 class="text-center">DUNGEON SYNTH</h4>
+</div>
+<!--END OF DUNGEON SYNTH-->
+</div>
+</div>
+<!--END OF CATEGORIES-->
+<br>
+<br>
+<br>
+<!--INFO-->
+<div class="container">
+<p class="text-white text-center">
+Pirate Hat has been created to help people who can't work in silence.
+</p>
+<p class="text-white text-center">
+You can also use Pirate Hat for:
+</p>
+<center>
+<button type="button" class="btn-success">Sleep</button>
+<button type="button" class="btn-danger">Workout</button>
+<button type="button" class="btn-info">Study</button>
+<button type="button" class="btn-success">Relax</button>
+<button type="button" class="btn-danger">Run</button>
+<button type="button" class="btn-info">Read</button>
+</center>
+<br>
+<br>
+<p class="text-warning text-center font-weight-bold">Tip: If you use Pirate Hat from PC, you can pin the tab on your browser to reduce it in size, by hovering over the tab, pressing <kbd>Right Click</kbd> and choosing <kbd>Pin tab</kbd>.</p>
+</div>
+<!--END OF INFO-->
+<br>
+<!--PLAYLISTS ON YOUTUBE-->
+<div class="container">
+<h3 class="text-info text-center">Sources</h3>
+<div class="row">
+<div class="col">
+<a class="sources text-info" href="https://www.youtube.com/watch?v=fVI50xI3jMI" target="_blank">Rain</a>
+</div>
+<div class="col">
+<a class="sources text-info" href="https://www.youtube.com/watch?v=cwSHzxaYL6Q" target="_blank">Nature</a>
+</div>
+<div class="col">
+<a class="sources text-info" href="https://www.youtube.com/watch?v=jepf3Nlp2nA" target="_blank">City</a>
+</div>
+<div class="col">
+<a class="sources text-info" href="https://www.youtube.com/watch?v=AdGs3eocwyw" target="_blank">Office</a>
+</div>
+<div class="col">
+<a class="sources text-info" href="https://www.youtube.com/watch?v=6FaWhDZjoo4" target="_blank">Coffee Shop</a>
+</div>
+<div class="col">
+<a class="sources text-info" href="https://www.youtube.com/watch?v=eltuLJlW40A" target="_blank">Fire</a>
+</div>
+    </div>
+<div class="row">
+<div class="col">
+<a class="sources text-info" href="https://www.youtube.com/watch?v=V0Isz92zPSk" target="_blank">Jazz</a>
+</div>
+<div class="col">
+<a class="sources text-info" href="https://www.youtube.com/watch?v=N0M0GVcWSJc" target="_blank">Acoustic Music</a>
+</div>
+<div class="col">
+<a class="sources text-info" href="https://www.youtube.com/watch?v=xWpkKQH0xco" target="_blank">Classical Music</a>
+</div>
+<div class="col">
+<a class="sources text-info" href="https://www.youtube.com/watch?v=ZImxgXrH2e0" target="_blank">Chillstep</a>
+</div>
+<div class="col">
+<a class="sources text-info" href="https://www.youtube.com/watch?v=Vwrv5wvlrjU" target="_blank">Lo-Fi Hip Hop</a>
+</div>
+<div class="col">
+<a class="sources text-info" href="https://www.youtube.com/watch?v=OxgVmpAk538" target="_blank">Dungeon Synth</a>
+</div>
+</div>
+</div>
+<!--PLAYLISTS ON YOUTUBE-->
+<br>
+<br>
+<!--COPYRIGHTS AND SOCIAL MEDIA-->
+<div class="container">
+<p class="text-white text-center">Contact me on <a href="https://www.linkedin.com/in/georgios-drakopoulos/" target="_blank"><img id="lnkdlogo" src="img/linkedin.png" style="width: 30px;"></a></p>
+<p class="text-white text-center">George Drakopoulos &copy; 2018</p>
+</div>
+<!--END OF COPYRIGHTS AND SOCIAL MEDIA-->
+        
+<!--JavaScript-->
+<script>
+var aud1 = new Audio('sounds/rain.mp3');
+aud1.loop = true;
+var aud2 = new Audio('sounds/fire.mp3');
+aud2.loop = true;
+var aud3 = new Audio('sounds/nature.mp3');
+aud3.loop = true;
+var aud4 = new Audio('sounds/city.mp3');
+aud4.loop = true;
+var aud5 = new Audio('sounds/office.mp3');
+aud5.loop = true;
+var aud6 = new Audio('sounds/coffee.mp3');
+aud6.loop = true;
+var aud7 = new Audio('sounds/jazz.mp3');
+aud7.loop = true;
+var aud8 = new Audio('sounds/acoustic.mp3');
+aud8.loop = true;
+var aud9 = new Audio('sounds/classical.mp3');
+aud9.loop = true;
+var aud10 = new Audio('sounds/chillstep.mp3');
+aud10.loop = true;
+var aud11 = new Audio('sounds/lofi.mp3');
+aud11.loop = true;
+var aud12 = new Audio('sounds/dungeon.mp3');
+aud12.loop = true;
+
+function isPlaying(aud)
+{
+    return (!aud.paused)
+}
+
+function sound(i){
+if (i == 'one') {
+               if (isPlaying(aud1))
+                    aud1.pause()
+                else
+                    aud1.play()
+}else if (i == 'two') {
+                if (isPlaying(aud2))
+                    aud2.pause()
+                else
+                    aud2.play()
+}else if (i == 'three') {
+                if (isPlaying(aud3))
+                    aud3.pause()
+                else
+                    aud3.play()
+}else if (i == 'four') {
+                if (isPlaying(aud4))
+                    aud4.pause()
+                else
+                    aud4.play()
+}else if (i == 'five') {
+                if (isPlaying(aud5))
+                    aud5.pause()
+                else
+                    aud5.play()
+}else if (i == 'six') {
+                if (isPlaying(aud6))
+                    aud6.pause()
+                else
+                    aud6.play()
+}else if (i == 'seven') {
+                if (isPlaying(aud7))
+                    aud7.pause()
+                else
+                    aud7.play()
+}else if (i == 'eight') {
+                if (isPlaying(aud8))
+                    aud8.pause()
+                else
+                    aud8.play()
+}else if (i == 'nine') {
+                if (isPlaying(aud9))
+                    aud9.pause()
+                else
+                    aud9.play()
+}else if (i == 'ten') {
+                if (isPlaying(aud10))
+                    aud10.pause()
+                else
+                    aud10.play()
+}else if (i == 'eleven') {
+                if (isPlaying(aud11))
+                    aud11.pause()
+                else
+                    aud11.play()
+}else if (i == 'twelve') {
+                if (isPlaying(aud12))
+                    aud12.pause()
+                else
+                    aud12.play()
+    }
+}
+</script>
+<!--END OF JavaScript-->
+    </body>
+</html>
